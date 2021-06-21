@@ -1,0 +1,94 @@
+.myGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 406px);
+  grid-gap: 16px; }
+
+.gauge-1-half-ring {
+  fill: transparent;
+  stroke: #e9ecef;
+  stroke-width: 30;
+  stroke-linecap: round;
+  stroke-dashoffset: -629;
+  stroke-dasharray: 629 1256; }
+
+.gauge-1-segment {
+  fill: transparent;
+  stroke: url(#gradient-1);
+  stroke-width: 30;
+  stroke-linecap: round;
+  stroke-dashoffset: -629;
+  stroke-dasharray: 0 1256; }
+
+@keyframes fillUp {
+  to {
+    stroke-dasharray: 629 1256; } }
+
+.gauge-2 {
+  width: 600px;
+  height: 600px; }
+  .gauge-2-half-ring {
+    fill: transparent;
+    stroke: #e9ecef;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-dashoffset: -50;
+    stroke-dasharray: 50 100; }
+  .gauge-2-segment {
+    fill: transparent;
+    stroke: url(#gradient-2);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-dashoffset: -50;
+    stroke-dasharray: 0 100; }
+
+.gauge-3 {
+  width: 600px;
+  height: 600px; }
+  .gauge-3-wrapper {
+    width: 100%;
+    height: 100%; }
+  .gauge-3-half-ring {
+    fill: none;
+    stroke: #e9ecef;
+    stroke-width: 30;
+    stroke-linecap: round;
+    stroke-dashoffset: -629;
+    stroke-dasharray: 629 1256; }
+  .gauge-3-segment {
+    fill: none;
+    stroke: url(#gradient-3);
+    stroke-width: 30;
+    stroke-linecap: round;
+    stroke-dashoffset: -629;
+    stroke-dasharray: 300 1256; }
+  .gauge-3-segment_1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-dashoffset: -787;
+    stroke-dasharray: 4 1256; }
+  .gauge-3-segment_2 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-dashoffset: -829;
+    stroke-dasharray: 4 1256; }
+  .gauge-3-segment_3 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-dashoffset: -871;
+    stroke-dasharray: 4 1256; }
+  .gauge-3-tooltip, .gauge-3-tooltip_text {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1; }
+
+.heavy {
+  font: bold 30px sans-serif; }
